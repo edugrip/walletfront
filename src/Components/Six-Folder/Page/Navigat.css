@@ -1,0 +1,117 @@
+ #Back-Compon{
+    color:white;
+    text-decoration:none;
+} 
+/* first input code start here */
+.Recipient-Add{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+.Scaner-Input{
+    width:400px;
+    height:60px;
+    border: 2px solid skyblue;
+    border-radius: 9px;
+    /* padding: 12px; */
+}
+
+.Recipient-Input{
+    height: 48px;
+    width: 250px;
+    border:none;
+    outline: none;
+}
+
+
+.Assets-Input{
+    height: 48px;
+    width: 200px;
+    border:none;
+    outline: none;
+}
+.Recipient-Input::placeholder{
+    font-size: 16px;
+}
+.Scaner-Icon{
+    width: 40px;
+    height: 45px;
+    position: relative;
+    top: 9px;
+}
+.Paste-Button{
+    width: 80px;
+    border:none;
+    outline: none;
+    font-weight: 900;
+    color: #3498db;
+    background: none;
+    cursor: pointer;
+}
+/* first input code ned here */
+
+/* second input code start here */
+.Amount-Input-Container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Input-Border{
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: left;  
+    border:2px solid #3498db ;
+    display: flex; 
+    top: 40px;
+  
+}
+.Border-text{
+    margin-left: 20px;
+    color: #3498db;
+    font-weight: 700;
+    margin-top: -20px;
+  
+
+}
+.Amount-Input{
+    width: 280px;
+    border: none;
+    outline: none;
+    
+}
+.Max-Button{
+    width: 50px;
+    border: none;
+    outline: none;
+    background:none;
+    font-weight: 900;
+    color: #3498db; 
+    margin-left:-60px;
+}
+.USDT-Button{
+    width: 50px;
+    border: none;
+    outline: none;
+    background:none;
+    font-weight: 900;
+    color: #3498db; 
+    margin-left: 20px;
+}
+
+
+.assetsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+
+.Send-Icon{
+    color: white;
+}
+

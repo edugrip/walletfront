@@ -1,0 +1,422 @@
+.Send-Compon {
+    width: 100%;
+    height: 45px;
+    background-color: #2a8cdc;
+    display: flex;
+    color: white;
+}
+
+.Send-Compon input {
+    width: 90% !important;
+    background-color: #2a8cdc;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-indent: 20px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    color: #dfe6e9;
+}
+
+.Send-Compon input::placeholder {
+    color: #dfe6e9;
+}
+
+.Send-Icon {
+    font-size: 20px !important;
+    margin-top: 11px;
+    text-indent: 10px;
+}
+
+
+/* main ui css start here */
+.Main-Icon-Container {
+    background-color: #2a8cdc;
+}
+
+.Main-Header-Icons {
+    background-color: #2a8cdc;
+    width: 100%;
+    display: flex;
+}
+
+
+
+.Notification-Icon {
+    font-size: 40px;
+    line-height: 80px !important;
+    color: white;
+    cursor: pointer;
+}
+
+.Money-Counter {
+    width: 700px;
+    color: white;
+    line-height: 5rem;    
+    margin-left: -4rem;
+}
+
+.Second-Link-Container{
+    width:200px;
+    margin-top: 50px;
+    margin-left: 1000px;
+}
+
+
+
+.Setting-Icon {
+    font-size: 28px;
+    color: white;
+    line-height: 83px;
+    cursor: pointer;
+    margin-right: 1rem !important;
+}
+
+
+/* Link Icons Container css start here */
+.Link-Icons-Container {
+    width: 100%;
+    height: auto;
+    background-color: #2a8cdc;
+    padding-bottom: 20px;
+}
+
+.Icon-Header {
+    text-align: center;
+    color: #dfe6e9 !important;
+}
+
+#Content-icon-buy {
+    color: #ffff;
+    margin-top: 1git add .0px;
+}
+
+.tokenTab{
+    color: #fffdfd;
+    font-size: 25px;
+    background-color: #2a8cdc;
+    width: 49%;
+    float: left;
+    border-radius: 5px;
+    margin-bottom: 17px;
+    justify-content: space-between;    
+}
+.tokenTab:nth-child(1){
+    margin-right: 5px;
+}
+
+.Bitcoin-Container{
+    width: 80% !important;
+    max-width: 400px;
+    margin: 0 auto ;   
+}
+.Ethereum-Container{
+    width: 80% !important;
+    max-width: 400px;
+    margin: 0 auto ;   
+}
+.BitcoinCash-Container{
+    width: 80% !important;
+    max-width: 400px;
+    margin: 0 auto ;   
+}
+.Bnb-Container{
+    width: 80% !important;
+    max-width: 400px;
+    margin: 0 auto ;   
+}
+
+.SmartChain-Container{
+    width: 80% !important;
+    max-width: 400px;
+    margin: 0 auto ;   
+}
+
+.hr-line{
+   padding: 1.2rem;
+}
+
+hr{
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+.tokenTab:hover{
+    color: #2a8cdc;
+    background-color: #6abbfd;
+}
+
+
+/* main icons css start here */
+.Main-Icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* send icon css here */
+.Send-Icon {
+    width: 80px;
+    display: block;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.Send-Icon>i {
+    font-size: 29px;
+    position: relative;
+    right: 10px;
+    top: 0px !important; 
+}
+
+.Send-Icon b {
+    text-align: center;
+    font-size: 17px;
+}
+
+/* receive icon css here */
+.Receive-Icon {
+    width: 80px;
+    display: block;
+    text-decoration: none;
+    justify-content: center;   
+}
+
+.Receive-Icon>i {
+    font-size: 29px;
+    position: relative;
+    left: 8px;
+    top: 4px;
+}
+
+/* buy icon css here */
+.Buy-Icon {
+    width: 80px;
+    display: block;
+    text-decoration: none;
+    justify-content: center;  
+    margin-left:25px ;
+   
+}
+
+.Buy-Icon>i {
+    font-size: 22px;
+    position: relative;
+    left: 8px;
+    bottom: 60px;
+}
+
+.Buy-Icon b {
+    text-align: center;
+    font-size: 15px;
+    /* position: relative; */
+    /* top: 14px; */
+    right: 14px;
+}
+
+/* swap icon css here */
+.Swap-Icon {
+    width: 80px;
+    display: block;
+    text-decoration: none;
+    justify-content: center;   
+}
+
+.Swap-Icon>i {
+    font-size: 22px;
+    position: relative;
+    left: 8px;
+}
+/* --------------------testhome css------------------------ */
+.table-responsive {
+    text-align: center;
+}
+button.Copy_btn {
+    background: #f5f5f5;
+    width: 100px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
+  .box{
+    height: 35vh;
+    width: 20rem;
+    background: #000 !important;
+    opacity: 0.8;
+  }
+
+  .top-head{
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+
+.heading{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.mid-area{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;    
+}
+.mid-area span{
+   font-size: 1.4rem; 
+   margin-left: 20px;
+}
+.subjet-net::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+ position: absolute; 
+  background-color: #04AA6D;
+  border-radius: 50px;
+  top: 32%;
+  left: 4%;
+}
+
+
+.foot-btn{
+    margin-top: 30px;
+    text-align: center;
+}
+.foot-btn button{
+   width: 18rem;
+   background: rgb(56, 55, 55);
+   color: #fff;
+   border: none;
+}
+.dropdown-menu.show {
+    transform: translate3d(-42px, 75px, 0px) !important;
+}
+
+
+
+  
+  /* Links inside the dropdown */
+  .dropdown-content .middle-content {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.Account1{
+    color: white;
+    margin-top: 20px;
+}
+/* #openModal{
+ width: 400px;
+ height: 300px;
+ margin-left: 300px;
+ margin-top: 500px;
+} */
+/* #openModal{
+    display: none;
+}
+.Side-DropDown{
+    width:auto;
+    display: inline-block;
+}
+.Side-DropDown:hover #openModal{
+  display: block;
+} */
+
+
+.modal-content {   
+    width: 95%;
+    height: 70vh;
+}
+
+.HistoryContent{
+   padding-top: 10px;
+   margin-top: -700px !important;
+   color: white;
+}
+
+
+.HistoryIcon{
+  color: white !important;
+  padding-bottom: 40px;
+    
+}
+.footbtn{
+    display: flex;
+    flex-direction: row;
+}
+.Side-Bar-Button {
+    width: 700px;
+    text-align: right;
+}
+.assetsNmaes_derp {
+    top: 67px;
+}
+
+
+@media screen and (max-width:420px){
+    .Money-Counter{       
+        margin-left: 3rem;
+    }    
+    .Main-Icons a {
+        font-size: 12px;
+        text-align: center;
+        margin: 4px auto;
+    }
+
+    .foot-btn {
+        margin-top: 99px;
+        text-align: center;
+        margin-left: -33px;
+    }
+
+    .subjet-net::before {
+       top: 25%;
+        left: 3%;
+    }
+    .Side-Bar-Button {
+        width: 700px;
+        text-align: right;
+        padding: 0px 0px ;
+      }
+}

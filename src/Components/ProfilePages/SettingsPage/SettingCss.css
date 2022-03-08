@@ -1,0 +1,391 @@
+.Main-Password-Container {
+  width: 100%;
+  height: 100vh;
+}
+.Header {
+  background: rgb(233 231 231);
+  width: 100%;
+  height: 95px;
+  display: flex;
+}
+.Image-Container {
+  width: 485px;
+  text-align: right;
+}
+.Side-Bar-Button {
+  width: 700px;
+  text-align: right;
+}
+.mainContainer{
+  background-color: gray;
+  width:50%;
+  float: right;
+}
+.cardForm {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px !important;
+  background-color:#fff;
+  border: 1px solid #d2d8dd;
+  margin-top: 50px;
+}
+.cardFormimport {
+  width: 500px;
+  height: 500px;
+  border-radius: 20px !important;
+  background-color:#fff;
+  border: 1px solid #d2d8dd;
+  margin-top: 58px;
+}
+.titleStyle{
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 60px;
+}
+.passwordStyle {
+  
+  width: 80%;
+  height: 20%;
+  background-color: transparent;
+  border: 1px solid #d2d8dd;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+
+}
+.paraContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+}
+.lastButtons {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin-top: 110px;
+  border-top: 1px solid #aaaaaa;
+  padding: 10px 0px;
+}
+.firstButton {
+  width: 200px;
+  height: 50px !important;
+  border-radius: 60px !important;
+  background-color: #EFEFEF !important;
+}
+.scondaryButton{
+width: 200px;
+height: 50px !important;
+border-radius: 60px !important;
+border: 1px solid #4398e1;
+background: #4398e1;
+}
+
+.cancelButton {
+width: 150px;
+height: 40px;
+border-radius: 60px !important;
+background-color: #EFEFEF !important;
+}
+.saveButton{
+width: 150px;
+height: 40px;
+border-radius: 60px !important;
+border: 1px solid #4398e1;
+background: #4398e1;
+}
+.addNetworkButton{
+width: 200px;
+height: 40px;
+border-radius: 60px !important;
+border: 1px solid #4398e1;
+background: #4398e1;
+margin-top: 20px;
+
+}
+
+.addAccountButton {
+  border-radius: 60px !important;
+  width: 200px;
+  margin-left: 17px;
+  background: #4398e1;
+}
+.paragraphStyle{
+  padding: 20px;
+  color: #808080;
+  padding-left: 40px;
+  border-bottom: 1px solid #d2d8dd;
+  text-align: left;
+}
+.dropDownContainer{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 40px;    
+}
+.selectTitleStyle{
+  color:#4d4d4d;
+  font-size: 20px;
+}
+.privateTextStyle{
+  color:#4d4d4d;
+  font-size: 20px;
+
+}
+.privateKeyContainer{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 40px;    
+}
+.privateInputStyle{
+  width: 80%;
+  height: 60px;
+  margin-top: 20px;
+  border: 1px solid #d2d8dd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.importTitleStyle{
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.dropDownSelectStyle{
+  width: 210px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 10px;
+  border:1px solid #d2d8dd;
+}
+
+/* --------------------setting page------------------------------ */
+
+.container{
+  max-width: 950px;
+  width: 100%;
+  padding: 40px 50px  40px  40px;
+  margin: 0 auto;
+  border-radius: 12px ;
+  margin-top: 40px;
+}
+.container .topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.middle-content{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+
+.middle-content .list{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 50px;
+  position: relative;
+}
+.middle-content .list label{
+  height: 45px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 12;
+}
+#home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help,
+#code:checked ~ .list label.code,
+#about:checked ~ .list label.about{
+  color: #0292f9;
+}
+.content .list label:hover{
+  color: #6d50e2;
+}
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #6d50e2;
+  transition: all 0.4s ease;
+}
+#home:checked ~ .list .slider{
+  top: 0;
+}
+#blog:checked ~ .list .slider{
+  top: 60px;
+}
+#help:checked ~ .list .slider{
+  top: 120px;
+}
+#code:checked ~ .list .slider{
+  top: 180px;
+}
+#about:checked ~ .list .slider{
+  top: 240px;
+}
+.middle-content .text-content{
+  width: 80%;
+  height: 100%;
+}
+.middle-content .text{
+  display: none;
+}
+.middle-content .text .title{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.middle-content .text p{
+  text-align: justify;
+}
+.middle-content .text-content .home{
+  display: block;
+}
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about{
+  display: block;
+}
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home{
+  display: none;
+}
+.middle-content input{
+  display: none;
+}
+.inputForm input{
+  display: block;
+}
+.blue-color{
+  color: #2a8cdc;
+}
+.pd5{
+  font-size: 12px;
+  padding: 10px 0px 10px 0px;
+}
+
+/* -------------------------------setting child pages pages-------------------------------------- */
+.headergeneralStyle{
+ text-align: left;
+}
+.headerNetworkStyle{
+ display: flex;
+ flex-direction: 'row';
+ justify-content: space-between;
+ border-bottom: 1px solid gray;
+ margin-bottom: 5px;
+}
+
+.generalHeaderStyle{
+color:#4d4d4d;
+font-weight:400px;
+padding: 20px;
+border-bottom: 1px solid #4d4d4d;
+}
+.networkHeaderStyle{
+color:#4d4d4d;
+font-weight:400px;
+padding: 20px;
+text-align: left;
+
+}
+.headerCurrencyStyle{
+padding: 20px;
+}
+.inputStyle{
+width: 80%;
+height: 40px;
+
+}
+.standard-select{
+  width: 40%;
+  height: 40px;
+  border: 2px solid #4d4d4d;
+  border-radius: 10px;
+  font-size:17px;
+}
+.dropDownstyle{
+margin-left: 20px;
+margin-top: 10px;
+}
+.redioButtonContainer{
+margin-left: 40px;
+}
+.redioButtonContainer input{
+display: block;
+margin-top: 5px;
+}
+.redioButtonContainer{
+display: flex;
+margin-top: 20px;
+}
+.redioButtonContainer label{
+padding-left: 10px;
+padding-right: 30px;
+color: #4d4d4d;
+}
+.networkContaoner{
+display: flex;
+flex-direction: 'row';
+justify-content: center !important;
+
+}
+.networkLeftContainer{
+display: flex;
+flex-direction: column;
+}
+.networkRightcontainer{
+display: flex;
+flex-direction: column;
+
+}
+.leftDataStyle{
+margin: 20px;
+}
+.rightDataStyle{
+margin: 8px;
+}
+.leftLableStyle{
+font-size: 20px;
+color: #4d4d4d;
+font-weight: lighter;
+float: left;
+}
+.rightLableStyle{
+color: black;
+font-weight: bold;
+float: left;
+}
+.rightDataStyle input{
+display: block;
+}
+.inputStyle{
+width: 100%;
+border-radius:10px;
+}
+.borderStyle{
+border-bottom: 1px solid gray;
+}
+.cancelSaveStyle{
+margin-top: 20px;
+}

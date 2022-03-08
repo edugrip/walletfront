@@ -1,0 +1,64 @@
+
+.table-hover tr td {
+  padding: 10px !important;
+}
+.table-hover tr td a {
+  text-decoration: none;
+  background: none;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+td.text-truncatebox {
+  max-width: 131px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.table>:not(:first-child) {
+  border-bottom: 2px solid #ddd;
+  border-top: none;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.react-responsive-modal-modal {
+  top: 28%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mx-w0{
+  width: 200px !important;
+}
+
+.startto_box_modal {
+  width: 300px;
+  padding: 20px;
+}
+button.react-responsive-modal-closeButton {
+  right: 0px;
+  position: initial;
+  display: none;
+}

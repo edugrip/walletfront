@@ -1,0 +1,105 @@
+
+
+.Swap-Page-Container{
+    width:100%;
+    height:auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.Swap-Container{
+    width:70%;
+    height:auto;
+    margin-top: 70px;
+    box-shadow: 0px 0px 1px black;
+}
+.BNB-Container{
+    width:auto;
+    display:flex;
+    justify-content: center;
+}
+.BNB-Content{
+    width:700px;
+    margin-top:20px;
+}
+.BNB-Logo{
+    width:100px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/* TWT css start here */
+.TWT-Container{
+    width:70%;
+    height:auto;
+    box-shadow: 0px 0px 1px black;
+}
+.TWT-Container{
+    width:auto;
+    display:flex;
+    justify-content: center;
+}
+.TWT-Content{
+    width:700px;
+    margin-top:20px;
+}
+.TWT-Logo{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.TWT-Logo>i{
+    background-color:#778beb;
+    border-radius: 50%;
+    color:white;
+    padding:8px;
+}
+.Footer-Button-Section{
+   
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.Parsentage-Buttons{
+    padding: 10px;
+
+}
+.Per-one{
+    margin-left: 16px;
+    background-color: gainsboro !important;
+    width: 100px;
+    height: 30px;
+    color: blue !important;
+    border: none !important;
+    border-radius: 20px;
+    margin: 10px;
+}
+.text{
+    text-align: center;
+}
+.Swap{
+    height: 40px;
+    width: 50%;
+}
+.Exchange-Link{
+    font-size: 23px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2a8cdc;
+    border-radius: 20px;
+    padding: 5px 20px;   
+}
+.Swap-Link{
+    font-size: 23px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2a8cdc;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-left: 10px;   
+}
+.Swap-Text{
+    font-size: 23px;
+}

@@ -1,0 +1,63 @@
+.buttonsection{
+    display: flex;
+    margin-left: 600px;
+}
+
+.Sendbutton{
+    border: 1px solid black;
+    width: 60px;
+    height: 30px;
+    margin-top: 70px;
+    /* margin-left: -1000px; */
+
+}
+.Sendbutton2{
+    border: 1px solid black;
+    width: 60px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 70px;
+}
+.Recievebutton{
+    border: 1px solid black;
+    width: 60px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 70px;
+}
+.Recievebutton2{
+    border: 1px solid black;
+    width: 60px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 70px;
+}
+.AdressCopy{
+    border: 1px solid black;
+    width: 120px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 70px;  
+}
+.AdressCopy2{
+    border: 1px solid black;
+    width: 120px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 70px;
+}
+.Transactionhistory{
+    margin-top: 40px;
+}
+.H3component{
+    display: flex;
+    margin-left: 500px;
+    margin-top: 30px;
+
+}
+.headingOne{
+    margin-left: 20px;
+}
+.headingtwo{
+    margin-left: 300px;
+}

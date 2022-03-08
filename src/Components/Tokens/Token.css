@@ -1,0 +1,138 @@
+.Bitcoin-Container{
+   width:100%;
+   height:55px;
+   display:flex;
+   justify-content:center;
+   margin-top: 20px;
+   
+   
+}
+.Bitcoin-Icon{
+    text-align:center;
+     width:50px;
+    font-size: 32px;
+    background-color:#e67e22;
+    padding: 9px;
+    border-radius: 100%;
+    color:white;
+    
+}
+.Bitcoin-Content{
+    width:1290px;
+}
+.Bitcoin-Content b{
+    padding:12px;
+}
+.Bitcoin-Content p{
+    padding:12px;
+}
+
+/* Ethereum css start here */
+.Ethereum-Container{
+    width:100%;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    
+ }
+ .Ethereum-Icon{
+     text-align:center;
+     width:50px;
+     font-size: 32px;
+     background-color:silver;
+     padding: 9px;
+     border-radius: 100%;
+ }
+ .Ethereum-Content{
+     width:1290px;
+ }
+ .Ethereum-Content b{
+     padding:12px;
+ }
+ .Ethereum-Content p{
+     padding:12px;
+ }
+
+/* bitcoin cash css start here */
+.BitcoinCash-Container{
+    width:100%;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    
+ }
+ .BitcoinCash-Icon{
+     text-align:center;
+     width:50px;
+     font-size: 32px;
+     background-color:#32ff7e;
+     padding: 9px;
+     border-radius: 100%;
+     color:white;
+ }
+ .BitcoinCash-Content{
+     width:1290px;
+ }
+ .BitcoinCash-Content b{
+     padding:12px;
+ }
+ .BitcoinCash-Content p{
+     padding:12px;
+ }
+
+ /* Bnb css start here */
+ .Bnb-Container{
+    width:100%;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    
+ }
+ .Bnb-Icon{
+     text-align:center;
+     width:50px;
+     font-size: 32px;
+     background-color:#fbc531;
+     padding: 9px;
+     border-radius: 100%;
+ }
+ .Bnb-Content{
+     width:1290px;
+ }
+ .Bnb-Content b{
+     padding:12px;
+ }
+ .Bnb-Content p{
+     padding:12px;
+ }
+
+ /* smart chain css start here */
+ .SmartChain-Container{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    
+ }
+ .SmartChain-Icon{
+     text-align:center;
+     width:50px;
+     font-size: 32px;
+     background-color:black;
+     padding: 9px;
+     border-radius: 100%;
+ }
+ .SmartChain-Content{
+     width:1290px;
+ }
+ .SmartChain-Content b{
+     padding:12px;
+ }
+ .SmartChain-Content p{
+     padding:12px;
+ }
+.Links-Content{
+    text-decoration: none;
+    color: black;
+}
+ 

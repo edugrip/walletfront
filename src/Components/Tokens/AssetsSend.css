@@ -1,0 +1,247 @@
+#Back-Compon{
+    color:white;
+    text-decoration:none;
+}
+/* first input code start here */
+.Recipient-Add{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+.Scaner-Input{
+    width: 98%;
+    height:51px;
+    border: 2px solid silver;
+    border-radius: 9px;
+    /* padding: 12px; */
+}
+
+.Recipient-Input{
+    height: 44px;
+    width: 140px;
+    border:none;
+    outline: none;
+}
+
+
+.Recipient-Add label{
+    width: 124px;
+}
+
+
+.Assets-Input{
+    height: 48px;
+    width: 200px;
+    border:none;
+    outline: none;
+}
+.Recipient-Input::placeholder{
+    font-size: 16px;
+}
+.Scaner-Icon{
+    width: 40px;
+    height: 45px;
+    position: relative;
+    top: 9px;
+    left: 90px;
+}
+.Paste-Button{
+    width: 80px;
+    border:none;
+    outline: none;
+    font-weight: 900;
+    color: #3498db;
+    background: none;
+    cursor: pointer;
+}
+/* first input code ned here */
+
+/* second input code start here */
+.Amount-Input-Container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Input-Border{
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: left;  
+    border:2px solid #3498db ;
+    display: flex; 
+    top: 40px;
+  
+}
+.Border-text{
+    margin-left: 20px;
+    color: #3498db;
+    font-weight: 700;
+    margin-top: -20px;
+  
+
+}
+.Amount-Input{
+    width: 280px;
+    border: none;
+    outline: none;
+    
+}
+.Max-Button{
+    width: 50px;
+    border: none;
+    outline: none;
+    background:none;
+    font-weight: 900;
+    color: #3498db; 
+    margin-left:-60px;
+}
+.USDT-Button{
+    width: 50px;
+    border: none;
+    outline: none;
+    background:none;
+    font-weight: 900;
+    color: #3498db; 
+    margin-left: 20px;
+}
+
+
+.assetsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.amountLabelStyle1{
+  
+    line-height: 3.2rem !important; 
+}
+.modal-dialog{
+    transform: translate(1%, 18%) !important;
+}
+.modal-footer{
+    margin: 0 auto;
+}
+     
+
+/* ------------------------------------------------------------------ */
+.borderContainer{
+    height: 51px;
+    width: 98%;
+    outline: none;
+    border: 2px solid silver;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    margin-left: 20px;
+}
+.RecipientAdd{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+ }
+ .BitcoinStyle{
+    margin: 0 auto;
+  padding-top: 1px;
+  padding-left: 2px;
+    flex-direction: column;
+   
+  
+ }
+ .BitcoinStyle i{
+     font-size: 1.2rem;
+     margin-top: 2px;
+     margin-left: 2px;
+     height: 40px;
+     width: 40px;
+ }
+ .labelStyle{
+     font-size: 18px;
+ }
+ .labelBalanceStyle{
+     font-size: 14px;
+     border: none;
+ }
+ .innerContainer{
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     padding-left: 20px;
+ }
+ .amountContainer{
+    height: 51px;
+    width: 98%;
+    outline: none;
+    border: 2px solid silver;
+    border-radius: 9px;
+    right: 0;
+    margin-left: 20px;
+ }
+ .unit-input__input-container{
+     display: flex;
+     flex-direction: row;
+     justify-content:start;
+     margin-top: 8px;
+     padding-left: 7px;
+    
+    
+ }
+ .unit-input__input-container input{
+    width: 3.5rem;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background: #e8e6e6;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 8px;
+ }
+ .unit-input__input{
+     width: 60px;
+     height: 30px;
+     text-align: left;
+ }
+ .mainWrapper{
+     width: 98%;
+     max-width: 400px;
+    /* height: 510px; */
+     border: 1px solid #aaa;
+     border-radius: 8px;
+     margin: 0 auto; 
+     padding: 10px 0;    
+ }
+ .headerStyle1{
+    background-color: #2a8cdc;
+    color: #fff;
+    justify-content: center;
+    height:49px ;
+    border-radius: 20px;
+    margin : 0 auto;
+    width: 98%;
+    /* border-bottom-right-radius: 10px; */
+ }
+ .innerSendContainer{
+     width: 98%;
+     margin: 0 auto;
+ }
+ .firstButton{
+     width: 140px;
+ }
+ .secondButton{
+     width: 140px;
+ }
+
+ .unit-input__suffix{
+     font-size:18px;
+     /* margin-left: 90px; */
+ }
+
+ label.col-form-label {
+    text-align: left;
+}
