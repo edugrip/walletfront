@@ -7,6 +7,7 @@ import "./AssetsSend.css"
 import { getLocalObj } from "../helpers/helpers"
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
+import Header from '../Six-Folder/Header';
 const AssetsSend = () => {
 
   let walletAddress = localStorage.getItem('address')
@@ -30,7 +31,7 @@ const AssetsSend = () => {
   const handleNextButton = () => {
     alert("Congratulation")
   }
-  let apiUrl = `http://64.227.175.219:8005/`
+  let apiUrl = `https://143.110.250.238:8000/`
 
 
 
@@ -70,7 +71,7 @@ const AssetsSend = () => {
   }
   return (
     <div>
-      <div className="Send-Compon">
+      {/* <div className="Send-Compon">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-8 col-12 col-md-8">
@@ -87,7 +88,8 @@ const AssetsSend = () => {
 
           </div>
         </div>
-      </div>
+      </div> */}
+       <Header/>
       <div className="container">
         <div className="row">
 

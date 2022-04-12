@@ -9,7 +9,7 @@ import Header from '../Six-Folder/Header'
 import "./AssetsSend.css"
 
 const AssetsSendimport = () => {
-  let apiUrl = `http://64.227.175.219:8005/`
+  let apiUrl = `https://143.110.250.238:8000/`
   let walletAddress = localStorage.getItem('address')
   let walletPrivateKey = localStorage.getItem('privateKey')
   let contractAddress = localStorage.getItem('contractAddress')
@@ -41,7 +41,6 @@ const AssetsSendimport = () => {
           console.log("data", resp);
         if (resp.status == 'ok' ) {
             console.log("response is ok" ,resp);
-
             localStorage.setItem("password",password);
             localStorage.setItem("address", resp.result.address);
             localStorage.setItem("privateKey", resp.result.privateKey);
@@ -58,11 +57,9 @@ const AssetsSendimport = () => {
       })
       
   }
-
-
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
         <div className="container">
         <div className="row">
 
@@ -70,13 +67,13 @@ const AssetsSendimport = () => {
 
             <h3>Restore your Account with Secret Recovery Phrase</h3>
             <div class="mb-3 row">
-              <label for="staticEmail" class="col-form-label">Wallet Secret Recovery Phrase:</label>
+              <label for="staticEmail" class="col-form-label First-Label">Wallet Secret Recovery Phrase:</label>
                <div class="col-sm-12">
-                <textarea type="text" class="form-control py-3" value={textarea} onChange={(e) => setTextarea(e.target.value)} id="amount" placeholder=""/>
+                <textarea type="text" class="form-control py-3" value={textarea} onChange={(e) => setTextarea(e.target.value)} id="amount" placeholder="" />
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="staticEmail" class=" col-form-label">New password (min 8 chars) :</label>
+              <label for="staticEmail" class=" col-form-label Second-Label">New password (min 8 chars) :</label>
               <div class="col-sm-12">
                 <input type="password" class="form-control py-3" value={password} onChange={(e) => setpassword(e.target.value)} />
               </div>
@@ -88,9 +85,9 @@ const AssetsSendimport = () => {
               </div>
             </div> */}
             <div class="mb-3 row">
-              <label for="staticEmail" class=" col-form-label">Confirm password:</label>
+              <label for="staticEmail" class=" col-form-label Third-Label">Confirm password:</label>
                <div class="col-sm-12">
-                <input type="password" class="form-control  py-3" value={confirmpassword} onChange={(e) => setConfirmpassword(e.target.value)} id="amount" placeholder=""/>
+                <input type="password" class="form-control  py-3" value={confirmpassword} onChange={(e) => setConfirmpassword(e.target.value)} id="amount" placeholder="" />
               </div>
             </div>
 
@@ -101,7 +98,7 @@ const AssetsSendimport = () => {
             <div className="">
               
               <Button variant="primary" className="two-Button" onClick={importAccount}>
-                import
+                Import
               </Button>
 
             </div>

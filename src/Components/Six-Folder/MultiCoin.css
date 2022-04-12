@@ -41,6 +41,15 @@
     display: flex;
 }
 
+.Back-Arrow{
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    top: 31px;
+}    
 
 
 .Notification-Icon {
@@ -392,7 +401,9 @@ button.Copy_btn {
 .assetsNmaes_derp {
     top: 67px;
 }
-
+.HideDropCss{
+    display: none;
+}
 
 @media screen and (max-width:420px){
     .Money-Counter{       

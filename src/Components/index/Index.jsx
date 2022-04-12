@@ -4,9 +4,7 @@ import { Button } from 'react-bootstrap';
 import { Link } from "react-router-dom"
 import atob from 'atob'
 import crypto from 'crypto-js'
-import {getApi, postApi} from '../helpers/helpers'
-
-
+import { getApi, postApi } from '../helpers/helpers'
 import './Index.css'
 const Index = () => {
     const [mypassword, setMypassword] = useState('')
@@ -40,24 +38,19 @@ const Index = () => {
             console.log('Please Create New Wallet First.')
             document.getElementById('message').innerHTML = 'Please Create New Wallet First.'
         }
-
-
-
-
-
     }
- const getNetworks = async () =>{
-     getApi('')
- }
+    const getNetworks = async () => {
+        getApi('')
+    }
     return (
         <div class="container">
             <div class="row">
                 <div class="col-md-5 mx-auto">
-                <div class="myform form">
-                         <div id="first">
-                         <div class="logo mb-3">
-                               <div class="col-md-12 text-center">
-                                    <img src='img/logo' className='logo_img' alt='logo'></img>
+                    <div class="myform form">
+                        <div id="first">
+                            <div class="logo mb-3">
+                                <div class="col-md-12 text-center">
+                                    <img src='../../Images/logo-icon1.png' className='logo_img' alt='logo' width={380} height={50}></img>
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <h3>Welcome Back!</h3>
@@ -70,25 +63,21 @@ const Index = () => {
                             </div>
 
                             <div className="form-group mx-auto text-center">
-                            <Button  className='btn btn-primary' onClick={checkPass}>Unlock</Button>
+                                <Button className='btn btn-primary' onClick={checkPass}>Unlock</Button>
                                 {/* <Link className='btn btn-primary m-2' onClick={checkPass}>Unlock</Link> */}
                             </div>
 
                             <div class="col-md-12 ">
-                              <div class="login-or">
-                                 <hr class="hr-or"/>
-                                 <span class="span-or">or</span>
-                              </div>
-                           </div>
-
-
-                        </div>
-                        <div className="form-group mx-auto text-center">
-                         <Link to="/AssetsSendimport" className='btn btn-primary mx-2 my-2'>Import Wallet</Link>
-                          <Link to="/ConfirmPassword" className='btn btn-primary mx-2 my-2'>Create new Wallet</Link>
+                                <div class="login-or">
+                                    <hr class="hr-or" />
+                                    <span class="span-or">or</span>
+                                </div>
                             </div>
-
-                        
+                        </div>
+                        <div className="form-group mx-auto text-center">                            
+                            <a href="/AssetsSendimport" className='foot-link'>Import Wallet</a>
+                            <a href="/ConfirmPassword" className='foot-link'>Create new Wallet</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,5 +85,4 @@ const Index = () => {
 
     );
 };
-
 export default Index;

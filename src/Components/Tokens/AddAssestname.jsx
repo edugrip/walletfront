@@ -10,7 +10,7 @@ import {getApi, postApi, getCurrentChainId} from '../helpers/helpers'
 import "./AssetsSend.css"
 
 const AddAssestname = () => {
-  let apiUrl = `http://64.227.175.219:8005/`
+  let apiUrl = `https://143.110.250.238:8000/`
  // let walletAddress = localStorage.getItem('address')
 
 
@@ -42,7 +42,8 @@ const  addAndGetAssets = async (contractAddress) => {
 }
 
 const addAsset = async () =>{
-  let chainId = await getCurrentChainId() || 97;
+  let chainId = await getCurrentChainId();
+  console.log('Chain Id in add asset',chainId)
   let assets = (contractValidated) ? await getApi('add-asset', { contractAddress, chainId, userAddress}) :[]
   console.log("assets in add AssetsName", assets)
   setResult(assets);

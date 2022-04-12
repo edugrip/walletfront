@@ -5,7 +5,7 @@ import { Button, Card, InputGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const NetworksPage = () => {
-    let apiUrl = `http://64.227.175.219:8005/`
+    let apiUrl = `https://143.110.250.238:8000/`
     const [networkname, setNetworkname] = useState('')
     let walletAddress = localStorage.getItem('address')
     const [rpculr, setRpculr] = useState('')
@@ -45,44 +45,44 @@ const NetworksPage = () => {
            
            
                     <div className="rightDataStyle" >
-                        <label className="rightLableStyle">Network Name</label>
+                        <label className="rightLableStyle">Network Name :</label>
                     </div>
 
 
                     <div className="rightDataStyle" >
-                        <input type='text' className="inputStyle form-control border border-2" value={networkname} onChange={(e) => setNetworkname(e.target.value)} id="networkname"  />
+                        <input type='text' className="inputStyle form-control border border-2" value={networkname} onChange={(e) => setNetworkname(e.target.value)} id="networkname" style={{border:"1px solid #bdc3c7"}} />
                     </div>
                     <div className="rightDataStyle">
-                        <label className="rightLableStyle">New RPC URL</label>
+                        <label className="rightLableStyle">New RPC URL :</label>
                     </div>
                     <div className="rightDataStyle" >
-                        <input  type='text' className="inputStyle form-control border border-2" value={rpculr} onChange={(e) => setRpculr(e.target.value)} id="rpcurl" />
+                        <input  type='text' className="inputStyle form-control border border-2" value={rpculr} onChange={(e) => setRpculr(e.target.value)} id="rpcurl" style={{border:"1px solid #bdc3c7"}}/>
                     </div>
 
                     <div className="rightDataStyle">
-                        <label className="rightLableStyle">Chain IDL</label>
+                        <label className="rightLableStyle">Chain ID :</label>
                     </div>
                     <div className="rightDataStyle" >
-                        <input type='text' className="inputStyle form-control border border-2" value={chainid} onChange={(e) => setChainid(e.target.value)} id="chainid" />
+                        <input type='text' className="inputStyle form-control border border-2" value={chainid} onChange={(e) => setChainid(e.target.value)} id="chainid" style={{border:"1px solid #bdc3c7"}}/>
                     </div>
                     <div className="rightDataStyle">
-                        <label className="rightLableStyle">Currency Symbol(Optional)</label>
+                        <label className="rightLableStyle">Currency Symbol(Optional) :</label>
                     </div>
                     <div className="rightDataStyle" >
-                        <input  type='text'  className="inputStyle form-control border border-2" value={symbol} onChange={(e) => setSymbol(e.target.value)} id="symbol"  />
+                        <input  type='text'  className="inputStyle form-control border border-2" value={symbol} onChange={(e) => setSymbol(e.target.value)} id="symbol"  style={{border:"1px solid #bdc3c7"}}/>
                     </div>
                     <div className="rightDataStyle">
-                        <label className="rightLableStyle">Block Explorer URL(Optional)</label>
+                        <label className="rightLableStyle">Block Explorer URL(Optional) :</label>
                     </div>
                     <div className="rightDataStyle" >
-                        <input type='text' className="inputStyle form-control border border-2" value={explorer} onChange={(e) => setExplorer(e.target.value)} id="explorer"  />
+                        <input type='text' className="inputStyle form-control border border-2" value={explorer} onChange={(e) => setExplorer(e.target.value)} id="explorer"  style={{border:"1px solid #bdc3c7"}}/>
                     </div>
                     <div className="cancelSaveStyle">
 
                      
                         <p id="message"></p>
                         <Link to='/testpage'><Button variant="outline-primary" className="cancelButton">
-                            cancel
+                            Cancel
                         </Button></Link>
                         <Button variant="primary" className="saveButton mx-3" onClick={AddAssets} >
                             Save

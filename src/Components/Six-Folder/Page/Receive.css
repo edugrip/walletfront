@@ -142,6 +142,9 @@
   
 
 }
+.qrdivContainer{
+    text-align: center;
+}
 .qr-box{
   width: 30%;
  margin-top: 10px;

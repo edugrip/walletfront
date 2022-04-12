@@ -5,7 +5,7 @@ import { Card, Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import validator from 'validator'
 import "./Confirm-Password.css";
-let apiUrl = `http://64.227.175.219:8005/`
+let apiUrl = `https://143.110.250.238:8000/`
 // http://64.227.172.81:8000/password?password=aniket&cPassword=aniket
 
 
@@ -78,38 +78,30 @@ export const ConfirmPassword = () => {
       })
 
   }
-
-
-
-
-
-
-
   return (
     <div className="Main-Password-Container">
       <div className="Header">
         <div className="col-lg-12 text-center">
-          <img src="./Images/trodex7.png" alt="RandomImage" />
+          <img src="./Images/trodex7.png" className='brandName'alt="RandomImage" />
         </div>
       </div>
-
       <div className="container">
         <div class="row">
           <div class="col-md-5 mx-auto">
             <div class="myforms form ">
               <div class="col-md-12 text-center">
-                <img src='img/logo' className='logo_img' alt='logo'></img>
+                <img src='../../Images/logo-icon1.png' className='logo_img' alt='logo' width={360} height={50}></img>
               </div>
               <div className="Border-Bottom mx-auto"></div>
               <p className="text-center mt-1">The decentralized web awaits</p>
               <div class="awaits_css m-0">
                 <i className="fa fa-lock"></i>
-                <input type="text" name="password" className="form-control" placeholder="Enter your password" onChange={(e) => validate(e)}></input>
+                <input type="password" name="password" className="form-control" placeholder="Enter your password" onChange={(e) => validate(e)}></input>
               </div>
 
               <div class=" awaits_css m-0">
                 <i className="fa fa-lock "></i>
-                <input type="text" name="passwordc" className="form-control" placeholder="Enter your confirm password" onChange={(e) => validate(e)}></input> 
+                <input type="password" name="passwordc" className="form-control" placeholder="Enter your confirm password" onChange={(e) => validate(e)}></input> 
               </div>
 
               <p id="message"></p>

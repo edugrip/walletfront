@@ -98,7 +98,7 @@ import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import Header from "../Six-Folder/Header";
 import "./Ending.css";
-let apiUrl = `http://64.227.175.219:8005/`
+let apiUrl = `https://143.110.250.238:8000/`
 
 
 const Ending = () => {
@@ -160,15 +160,84 @@ const Ending = () => {
     else {
       document.getElementById('message').innerHTML = 'Invalid Seed'
     }
-
   }
 
+
+
+
+  //  <--------Button Show And Hide States Start Here------>
+   const [show1,setShow1] =useState("Button1")
+   const hide1=()=>{
+     setShow1("HideButton1");
+   }
+
+   const [show2,setShow2] =useState("Button2")
+   const hide2=()=>{
+     setShow2("HideButton2");
+   }
+
+   const [show3,setShow3] =useState("Button3")
+   const hide3=()=>{
+     setShow3("HideButton3");
+   }
+
+   const [show4,setShow4] =useState("Button4")
+   const hide4=()=>{
+     setShow4("HideButton4");
+   }
+
+   const [show5,setShow5] =useState("Button5")
+   const hide5=()=>{
+     setShow5("HideButton5");
+   }
+
+   const [show6,setShow6] =useState("Button6")
+   const hide6=()=>{
+     setShow6("HideButton6");
+   }
+
+   const [show7,setShow7] =useState("Button7")
+   const hide7=()=>{
+     setShow7("HideButton7");
+   }
+
+   const [show8,setShow8] =useState("Button8")
+   const hide8=()=>{
+     setShow8("HideButton8");
+   }
+
+   const [show9,setShow9] =useState("Button9")
+   const hide9=()=>{
+     setShow9("HideButton9");
+   }
+
+   const [show10,setShow10] =useState("Button10")
+   const hide10=()=>{
+     setShow10("HideButton10");
+   }
+
+   const [show11,setShow11] =useState("Button11")
+   const hide11=()=>{
+     setShow11("HideButton11");
+   }
+
+   const [show12,setShow12] =useState("Button12")
+   const hide12=()=>{
+     setShow12("HideButton12");
+   }
+  
+   //  <--------Button Show And Hide States End Here------->
+  // const [Remove,setRemove]=useState();
+  // const rem=()=>{ 
+  //   setRemove(seedArray.splice(seedArray.length))
+  // }
+  
+ 
 
   return (
     // header logo code start here
     <div className="bgseed">
-    <Header/>
-
+    {/* <Header/> */}
       {/* main content code start here */}
       <div className="Border">
         <h2 className="Head2">Confirm your Secret Recovery Phrase</h2>
@@ -178,96 +247,94 @@ const Ending = () => {
         <div className="Body2-Counter">
           {
             seedArray.map(item => {
-              console.log(item)
+              console.log('dafad',item)
               return (<button>{item}</button>)
             }
             )}
-
-
         </div>
         <div className="Boxes">
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide1();}}
             type="submit"
             value={mnemonicArray[3]}
-            className="Button"
-
+            className={show1}
           />
+         
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide2();}}
             type="submit"
             value={mnemonicArray[8]}
-            className="Button"
+            className={show2}
           />
-
+          
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide3()}}
             type="submit"
             value={mnemonicArray[4]}
-            className="Button"
+            className={show3}
           />
 
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide4();}}
             type="submit"
             value={mnemonicArray[0]}
-            className="Button"
+            className={show4}
           />
 
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide5();}}
             type="submit"
             value={mnemonicArray[9]}
-            className="Button"
+            className={show5}
           />
 
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide6();}}
             type="submit"
             value={mnemonicArray[10]}
-            className="Button"
+            className={show6}
           />
 
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide7()}}
             type="submit"
             value={mnemonicArray[1]}
-            className="Button"
+            className={show7}
           />
 
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide8()}}
             type="submit"
             value={mnemonicArray[11]}
-            className="Button"
+            className={show8}
           />
 
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide9()}}
             type="submit"
             value={mnemonicArray[7]}
-            className="Button"
+            className={show9}
           />
 
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide10();}}
             type="submit"
             value={mnemonicArray[2]}
-            className="Button"
+            className={show10}
           />
 
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value);  hide11();}}
             type="submit"
             value={mnemonicArray[5]}
-            className="Button"
+            className={show11}
           />
 
           <input
-            onClick={(e) => updateSeed(e.target.value)}
+            onClick={(e) => {updateSeed(e.target.value); hide12();}}
             type="submit"
             value={mnemonicArray[6]}
-            className="Button"
+            className={show12}
           />
         </div>
         {/* footer button code start here */}

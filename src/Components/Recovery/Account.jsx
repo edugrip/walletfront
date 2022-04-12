@@ -9,18 +9,11 @@ const Account = () => {
   const ButtonTow = () => {
     history("/ending")
   }
-
-
   let mnemonic = localStorage.getItem('mnemonic');
-
   return (
-  
    <div className="bgseed">
-     <Header/>
-
-
+     {/* <Header/> */}
       <div className="container">
-
         <div className="row">
           <div className="col-lg-7 mx-auto">
             <div className="card recovery_phrase">
@@ -40,18 +33,15 @@ const Account = () => {
                 Save this recovery phrase as it will help you when password is forgotten.
               </p>
               <div className="Last-Buttons">
-
                 <Button variant="primary" className="Second-Button" onClick={() => ButtonTow()}>
                   Next
                 </Button>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   );
 };
-
 export default Account;

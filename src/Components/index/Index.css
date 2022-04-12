@@ -42,7 +42,43 @@
     margin-bottom: 0px !important;
     }
     .logo_img {
-    border: 1px solid #dcdcdc;
     padding: 10px;
-    width: 50px;
+    width: 50px;   
+    background: aliceblue;
+    border-radius: 25px;
+    margin-top: 19px;
     }
+
+    table>:not(caption)>*>* {
+        font-size: 1.0rem;
+}
+
+    @media screen and (max-width:400px){
+        /* .logo_img {
+        margin-top: -73px;
+    } */
+
+    .Back-Arrow{
+        display: none;
+    }
+    table>:not(caption)>*>* {
+        font-size: 0.5rem;
+}
+    
+}
+
+@media screen and (max-width:680px){
+   
+.Back-Arrow{
+    display: none;
+}
+
+table>:not(caption)>*>* {
+        font-size: 0.5rem;
+}
+}
+
+.foot-link{
+    text-decoration: none;
+    padding: 0px 5px;
+}

@@ -7,16 +7,16 @@ const NewSend = () => {
   return (
     <div>
 
-    
+
       <div className="Send-Compon">
         <Link to="/TestPage">
           <i id="content-icon" className="fas fa-arrow-left Send-Icon "></i> </Link>
-          <input
+        <input
           type="text"
           placeholder="Search-Send "
           style={{ Color: "white" }}
         />
-       
+
       </div>
 
       {/* first input code start here */}
@@ -40,75 +40,75 @@ const NewSend = () => {
 
 
 
-      <div className="Amount-Input-Container">    
-          <fieldset className="Input-Border">
-            {/* <legend className="Border-text">Amount USDT</legend> */}
-                  <input type="text"
-                  placeholder="Insufficient funds for gas"
-                   className="Amount-Input"/>
-                  {/* <button className="Max-Button">MAX</button>
+      <div className="Amount-Input-Container">
+        <fieldset className="Input-Border">
+          {/* <legend className="Border-text">Amount USDT</legend> */}
+          <input type="text"
+            placeholder="Insufficient funds for gas"
+            className="Amount-Input" />
+          {/* <button className="Max-Button">MAX</button>
                   <button className="USDT-Button">USDT</button> */}
-          </fieldset>
+        </fieldset>
       </div>
 
-      
+
 
       <div className="assetsContainer">
-     
-      <div className="Recipient-Add">
-      <label style={{marginTop:'10px'}}>Assets:</label>
-        <div className="Scaner-Input">
-        
-          <input
-            type="text"
-            placeholder="Balance:
+
+        <div className="Recipient-Add">
+          <label style={{ marginTop: '10px' }}>Assets:</label>
+          <div className="Scaner-Input">
+
+            <input
+              type="text"
+              placeholder="Balance:
 0
 ETH"
-            className="Assets-Input"
-          />
+              className="Assets-Input"
+            />
+          </div>
         </div>
-      </div>
 
 
-      
+
       </div>
 
       <div className="assetsContainer">
-     
-      <div className="Recipient-Add">
-      <label style={{marginTop:'10px'}}>Amount:</label>
-        <div className="Scaner-Input">
-        
-          <input
-            type="text"
-                       placeholder="0
+
+        <div className="Recipient-Add">
+          <label style={{ marginTop: '10px' }}>Amount:</label>
+          <div className="Scaner-Input">
+
+            <input
+              type="text"
+              placeholder="0
 ETH
 
 $0.00
 USD"
-            className="Assets-Input"
-          />
+              className="Assets-Input"
+            />
+          </div>
         </div>
-      </div> 
 
 
-      
+
       </div>
       {/* first input code end here */}
 
       {/* second input code start here */}
-      
+
 
 
       <div className="lastButtons">
-                        <Button variant="outline-primary" className="firstButton">
-                            cancel
-                        </Button>
-                        <Button variant="primary" className="secondButton" >
-                            Next
-                        </Button>
+        <Button variant="outline-primary" className="firstButton">
+          cancel
+        </Button>
+        <Button variant="primary" className="secondButton" >
+          Next
+        </Button>
 
-                    </div>
+      </div>
       {/* second input code end here */}
     </div>
   );

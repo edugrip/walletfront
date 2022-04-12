@@ -241,7 +241,7 @@ font-size: 0.8rem !important;
 }
 .rightLableStyle{
  color: black;
- font-weight: bold;
+ /* font-weight: bold; */
 float: left;
 }
 .rightDataStyle input{
@@ -261,7 +261,7 @@ float: left;
 @media screen and (max-width:420px) {
 
 .cancelSaveStyle button{
- width: 4rem;
+ width: 7rem;
 }
 .container{
   width: 95% !important;

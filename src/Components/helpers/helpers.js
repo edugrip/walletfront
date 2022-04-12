@@ -1,10 +1,10 @@
 const getApi = async (url, obj) =>{
     let params = new URLSearchParams(obj).toString();
-    url = `http://64.227.175.219:8005/${url}?`+params; 
+    url = `https://143.110.250.238:8000/${url}?`+params; 
     try{
         let response = await  fetch(url)
-        let result = response.json();
-        console.log("json respons in helper", result)
+        let result = await response.json();
+        console.log("json respons in helper", await result)
         return  result
         
      }
@@ -14,7 +14,7 @@ const getApi = async (url, obj) =>{
 
 }
 const postApi = async (url, obj) =>{
-     url = `http://64.227.175.219:8005/${url}/?`+obj; 
+     url = `https://143.110.250.238:8000/${url}/?`+obj; 
      try{
         let response = await  fetch(url, obj)  // set type to post.. whatever
        return await response.json();
@@ -25,7 +25,9 @@ const postApi = async (url, obj) =>{
      }
 }
 const   getCurrentChainId = async ()=>{
-    return  await localStorage.getItem('currentChainId');
+      // let a=await localStorage.getItem('currentChainId');
+      // console.log('chainId in localstorage',a)
+      return  await localStorage.getItem('currentChainId');
 }
 
 const setLocalObj = (name , array) =>{

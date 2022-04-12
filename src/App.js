@@ -9,8 +9,10 @@ import Password from './Components/Confirm-Password/Password';
 import Account from "./Components/Recovery/Account";
 import Ending from './Components/Confirm-Recovery/Ending';
 import TestPage from './Components/Six-Folder/TestPage';
+import AssetHistory from './Components/Six-Folder/AssetHistory';
 import Recive from './Components/Six-Folder/Page/Recive';
 import History from './Components/Six-Folder/Page/History';
+import DepositHistory from './Components/Six-Folder/Page/DepositHistory';
 import Swap from './Components/Six-Folder/Page/Swap';
 import AddToken from './Components/Six-Folder/Page/AddToken';
 import NftsToken from './Components/Six-Folder/Page/NftsToken';
@@ -51,6 +53,7 @@ function App() {
           <Route path="/testpage" element={<TestPage />} />
           <Route exact path="/send" element={<NewSend />} />
           <Route exact path="/history" element={<History />} />
+          <Route exact path="/deposithistory" element={<DepositHistory />} />
           <Route exact path="/exchange" element={<Exchange />} />
           <Route exact path="/Receive" element={<Recive />} />
           <Route exact path="/swap" element={<Swap />} />
@@ -71,6 +74,7 @@ function App() {
           <Route exact path="/BNB" element={<BNB />} />
           <Route exact path="/AssetsSendimport" element={<AssetsSendimport />} />
           <Route exact path="/AddAssestname" element={<AddAssestname />} />
+          <Route exact path="/AssetHistory" element={<AssetHistory />} />
          
         </Routes>
       </BrowserRouter>

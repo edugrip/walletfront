@@ -62,3 +62,13 @@ button.react-responsive-modal-closeButton {
   position: initial;
   display: none;
 }
+
+.button_remove{
+  height: 5vh;
+  background: none;
+}
+/* button:hover {
+  color: rgb(48, 75, 228);
+  background-color: #d2d2d2;
+} */
+

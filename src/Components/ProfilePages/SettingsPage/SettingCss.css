@@ -373,7 +373,7 @@ float: left;
 }
 .rightLableStyle{
 color: black;
-font-weight: bold;
+/* font-weight: bold; */
 float: left;
 }
 .rightDataStyle input{

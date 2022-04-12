@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import Header from "../Header";
 
-const History = () => {
+const DepositHistory = () => {
   let apiUrl = `https://143.110.250.238:8000/`
 
   const [withdrawListdata, setWithdrawListdata] = useState('')
@@ -11,7 +11,9 @@ const History = () => {
   console.log("walletAddress", walletAddress)
 
   const fetchDataAsset = async () => {
-    await fetch(`${apiUrl}trx-history?userAddress=${walletAddress}`).then((result) => {
+    let chainId = await localStorage.getItem('currentChainId');
+    console.log('chain id for deposit list', chainId)
+    await fetch(`${apiUrl}deposit-history?userAddress=${walletAddress}`).then((result) => {
       console.log('resulttt history dsdsdsdsdsdsdsdsdsdsdsdsddccxcxcxc', result)
       result.json().then((resp) => {
         var data = resp.result;
@@ -73,4 +75,4 @@ const History = () => {
             </div></div></div></div></div>
   );
 };
-export default History;
+export default DepositHistory;

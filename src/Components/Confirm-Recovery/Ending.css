@@ -103,12 +103,162 @@ p#message {
     text-align: center;
 }
 
-.Button {
+
+/* <--------button show and hide css start here--------> */
+/* button 1 css  */
+.Button1 {
     border-radius: 5px;
     width: 60px;
     height: 29px;
-
+    border: none;
+    margin: 4px;
 }
+.HideButton1{
+    display:none;
+}
+
+/* button 2 css  */
+.Button2 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton2{
+    display:none;
+}
+
+/* button 3 css  */
+.Button3 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton3{
+    display:none;
+}
+
+/* button 4 css  */
+.Button4 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton4{
+    display:none;
+}
+
+/* button 5 css  */
+.Button5 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton5{
+    display:none;
+}
+
+/* button 6 css  */
+.Button6 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton6{
+    display:none;
+}
+
+/* button 7 css */
+.Button7 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton7{
+    display:none;
+}
+
+/* button 8 css  */
+.Button8 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton8{
+    display:none;
+}
+
+/* button 9 css  */
+.Button9 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton9{
+    display:none;
+}
+
+/* button 10 css  */
+.Button10 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton10{
+    display:none;
+}
+
+/* button 11 css  */
+.Button11 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton11{
+    display:none;
+}
+
+/* button 12 css  */
+.Button12 {
+    border-radius: 5px;
+    width: 60px;
+    height: 29px;
+    border: none;
+    margin: 4px;
+}
+.HideButton12{
+    display:none;
+}
+/* <--------button show and hide css end here--------> */
+
+/* Replace Button Code Start here */
+.ReplaceBtn{
+    
+}
+.ReplaceHideBtn{
+   display: none;
+}
+
+/* Replace Button Code End here */
 
 .Head2 {
     font-size: 30px;
@@ -350,8 +500,6 @@ input.Button {
     }
 
     /* card header content code end here */
-
-
     /* click button code start here */
     .Body2-Counter {
         margin-top: 50px;
@@ -361,11 +509,9 @@ input.Button {
         border: 2px solid black;
         padding: 20px;
     }
-
     .Body2-Counter button {
         padding: 2px;
     }
-
     /* click button code end here */
 
     /* all buttons css start here */
@@ -374,13 +520,11 @@ input.Button {
         padding: 10px;
         text-align: center;
     }
-
     .Button {
         border-radius: 5px;
         width: 60px;
         height: 29px;
     }
-
     /* all buttons css end here */
 
     /* footer buttons css start here */
@@ -424,8 +568,6 @@ input.Button {
         margin-left: 14rem;
 
     }
-
-
     /* main card css start here */
     .Border {
         height: auto;
@@ -506,7 +648,9 @@ input.Button {
         border-radius: 60px !important;
         background: #4398e1;
     }
-
+    .endingdrophide{
+        display: none;
+    }
     /* footer buttons css end here */
 
 }
@@ -557,7 +701,7 @@ input.Button {
     /* click button code start here */
     .Body2-Counter {
         margin-top: 50px;
-        width: 200px;
+        width: 300px;
         height: auto;
         margin-left: 30px;
         border: 2px solid black;
