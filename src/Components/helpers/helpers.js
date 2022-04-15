@@ -1,6 +1,6 @@
 const getApi = async (url, obj) =>{
     let params = new URLSearchParams(obj).toString();
-    url = `https://143.110.250.238:8000/${url}?`+params; 
+    url = `https://backend.trodex.io/${url}?`+params; 
     try{
         let response = await  fetch(url)
         let result = await response.json();
@@ -14,7 +14,7 @@ const getApi = async (url, obj) =>{
 
 }
 const postApi = async (url, obj) =>{
-     url = `https://143.110.250.238:8000/${url}/?`+obj; 
+     url = `https://backend.trodex.io/${url}/?`+obj; 
      try{
         let response = await  fetch(url, obj)  // set type to post.. whatever
        return await response.json();

@@ -31,7 +31,7 @@ const AssetsSend = () => {
   const handleNextButton = () => {
     alert("Congratulation")
   }
-  let apiUrl = `https://143.110.250.238:8000/`
+  let apiUrl = `https://backend.trodex.io/`
 
 
 

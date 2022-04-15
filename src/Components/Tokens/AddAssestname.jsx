@@ -10,7 +10,7 @@ import {getApi, postApi, getCurrentChainId} from '../helpers/helpers'
 import "./AssetsSend.css"
 
 const AddAssestname = () => {
-  let apiUrl = `https://143.110.250.238:8000/`
+  let apiUrl = `https://backend.trodex.io/`
  // let walletAddress = localStorage.getItem('address')
 
 

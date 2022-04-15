@@ -5,7 +5,7 @@ import { Card, Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import validator from 'validator'
 import "./Confirm-Password.css";
-let apiUrl = `https://143.110.250.238:8000/`
+let apiUrl = `https://backend.trodex.io/`
 // http://64.227.172.81:8000/password?password=aniket&cPassword=aniket
 
 

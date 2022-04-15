@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import Header from "../Header";
 
 const DepositHistory = () => {
-  let apiUrl = `https://143.110.250.238:8000/`
+  let apiUrl = `https://backend.trodex.io/`
 
   const [withdrawListdata, setWithdrawListdata] = useState('')
 

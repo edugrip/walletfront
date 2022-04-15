@@ -5,7 +5,8 @@ import { Button, Card, InputGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const NetworksPage = () => {
-    let apiUrl = `https://143.110.250.238:8000/`
+    //let apiUrl = `https://143.110.250.238:8000/`
+    let apiUrl = `https://backend.trodex.io/`
     const [networkname, setNetworkname] = useState('')
     let walletAddress = localStorage.getItem('address')
     const [rpculr, setRpculr] = useState('')

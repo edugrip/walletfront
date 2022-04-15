@@ -8,7 +8,7 @@
 //   }, withCredentials: true
 // })
 
-let apiUrl = `http://64.227.172.81:8000/`
+let apiUrl = `https://backend.trodex.io/`
 // export const latestBlocksDetails = async () => {
 //   await fetch(`${apiUrl}`,{
 //     method: 'GET',

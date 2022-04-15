@@ -9,7 +9,7 @@ import Header from '../Six-Folder/Header'
 import "./AssetsSend.css"
 
 const AssetsSendimport = () => {
-  let apiUrl = `https://143.110.250.238:8000/`
+  let apiUrl = `https://backend.trodex.io/`
   let walletAddress = localStorage.getItem('address')
   let walletPrivateKey = localStorage.getItem('privateKey')
   let contractAddress = localStorage.getItem('contractAddress')

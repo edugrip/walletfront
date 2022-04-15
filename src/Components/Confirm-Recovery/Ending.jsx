@@ -98,7 +98,7 @@ import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import Header from "../Six-Folder/Header";
 import "./Ending.css";
-let apiUrl = `https://143.110.250.238:8000/`
+let apiUrl = `https://backend.trodex.io/`
 
 
 const Ending = () => {
