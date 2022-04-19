@@ -26,6 +26,11 @@ p#message {
     color: red;
     text-align: center;
 }
+#message { 
+    color: red;
+    text-align: center;
+}
+
 .Photo {
     margin-top: 20px;
     margin-left: 200px;

@@ -13,6 +13,7 @@ export const ConfirmPassword = () => {
   const [errorMessage, setErrorMessage] = useState({ error: false, message: '' })
   const [password, setPassword] = useState('')
   const [passwordc, setPasswordc] = useState('')
+  const [termsCondnChecked, settermsCondn] = useState(false)
 
   let history = useNavigate();
   const Buttton = () => {
@@ -33,6 +34,7 @@ export const ConfirmPassword = () => {
         setErrorMessage({ error: false, message: '' })
       }
     }
+    
   }, [password, passwordc])
 
 
@@ -56,6 +58,12 @@ export const ConfirmPassword = () => {
     }
 
   }
+  const agreeTermsCond = (event) => {
+    let target = event.target
+    settermsCondn(event.target.checked);
+    
+  }
+  
 
   const signUpFun = async () => {
     console.log('password and confirm password ', password, passwordc)
@@ -69,6 +77,11 @@ export const ConfirmPassword = () => {
             window.location.href = ("/account")
           } else {
             document.getElementById('message').innerHTML = resp.message
+          }
+          if (!termsCondnChecked) {
+            document.getElementById('message').innerHTML = "Please agree the terms & conditions";
+          } else {
+            document.getElementById('message').innerHTML = "";
           }
 
         })
@@ -87,7 +100,7 @@ export const ConfirmPassword = () => {
 
         <div className="form_body">
           <div className="create_pass">Create Password</div>
-          <p className="text-center mt-1" style= {{marginLeft: "-84px" , fontSize: "16px" , color: "#99700c"}}>The decentralized web awaits</p>
+          <p className="text-center mt-1 resp-text" style= {{marginLeft: "-67px" , fontSize: "18px" , color: "rgb(35 44 51 / 78%)"}}>The decentralized web awaits</p>
   
           <div className="row pass_section">
             <div className="input-group" style={{flex: "1" , display:"flex", flexDirection:"column" ,margin: "10px 5px"}}>
@@ -95,24 +108,24 @@ export const ConfirmPassword = () => {
               <input type="password" name="password" placholder="Enter your password" className = "pass_input" onChange={(e) => validate(e)}></input>  
             </div>
 
-            <div className="input-group" style={{flex: "1" , display:"flex", flexDirection:"column" ,margin: "10px 5px", marginLeft:"22px"}}>
+            <div className="input-group responsive-cnfrm-pass" style={{flex: "1" , display:"flex", flexDirection:"column" ,margin: "10px 5px", marginLeft:"22px"}}>
               <label>Confirm password</label>
               <input type="password" name="passwordc" placholder="Enter your confirm password" className = "pass_input" onChange={(e) => validate(e)}></input> 
              </div>
           </div>
   
-          <div className="input-group" style = {{marginRight: "163px", fontSize: "17px", marginTop: "4px"}}>
+          <div className="input-group resp-checkbox" style = {{marginRight: "150px", fontSize: "18px", marginTop: "4px", color: "rgb(35 44 51 / 78%)"}}>
             <div style={{display: "flex"}}>
               <div style={{flex: "1", marginLeft:"609px", marginTop:"4px"}}>
                 <label>
-                  <input type="checkbox" name="Accept Term" id="Term" style={{height: "15px", width: "19px"}}></input>
+                  <input type="checkbox" name="Accept Term" id="Term" style={{height: "15px", width: "19px"}} onChange={(e) => agreeTermsCond(e)}></input>
                   <span style={{display: "inline"}}>I have read &amp; agree to the </span> 
                   <p  style={{display: "inline", color:"orange"}}>Terms of Use</p>
                 </label>
               </div>
             </div>
           </div>
-  
+          <div id="message" className="err-msg resp-errMsg"></div>
           <div className="form-footer">
             <button className="create_btn"  onClick={signUpFun}> Create </button>
           </div>
