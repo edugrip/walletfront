@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Card, Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import validator from 'validator'
-import "./Confirm-Password.css";
+import "../../assets/Confirm-Password.css";
 let apiUrl = `https://backend.trodex.io/`
 // http://64.227.172.81:8000/password?password=aniket&cPassword=aniket
 
@@ -79,95 +79,47 @@ export const ConfirmPassword = () => {
 
   }
   return (
-    <div className="Main-Password-Container">
-      <div className="Header">
-        <div className="col-lg-12 text-center">
+    <div className="Main-Password-Container password_Cont">
+      <div style = {{marginTop: "17px"}}> 
+        <div className="pass_logo"> 
           <img src="./Images/trodex7.png" className='brandName'alt="RandomImage" />
         </div>
-      </div>
-      <div className="container">
-        <div class="row">
-          <div class="col-md-5 mx-auto">
-            <div class="myforms form ">
-              <div class="col-md-12 text-center">
-                <img src='../../Images/logo-icon1.png' className='logo_img' alt='logo' width={360} height={50}></img>
-              </div>
-              <div className="Border-Bottom mx-auto"></div>
-              <p className="text-center mt-1">The decentralized web awaits</p>
-              <div class="awaits_css m-0">
-                <i className="fa fa-lock"></i>
-                <input type="password" name="password" className="form-control" placeholder="Enter your password" onChange={(e) => validate(e)}></input>
-              </div>
 
-              <div class=" awaits_css m-0">
-                <i className="fa fa-lock "></i>
-                <input type="password" name="passwordc" className="form-control" placeholder="Enter your confirm password" onChange={(e) => validate(e)}></input> 
-              </div>
+        <div className="form_body">
+          <div className="create_pass">Create Password</div>
+          <p className="text-center mt-1" style= {{marginLeft: "-84px" , fontSize: "16px" , color: "#99700c"}}>The decentralized web awaits</p>
+  
+          <div className="row pass_section">
+            <div className="input-group" style={{flex: "1" , display:"flex", flexDirection:"column" ,margin: "10px 5px"}}>
+              <label>New password(8 characters min)</label>
+              <input type="password" name="password" placholder="Enter your password" className = "pass_input" onChange={(e) => validate(e)}></input>  
+            </div>
 
-              <p id="message"></p>
-              <div className="text-center mx-auto">
-              <Button variant="primary" className="btn btn-primary text-center" onClick={signUpFun} >
-                SignUp
-              </Button>
+            <div className="input-group" style={{flex: "1" , display:"flex", flexDirection:"column" ,margin: "10px 5px", marginLeft:"22px"}}>
+              <label>Confirm password</label>
+              <input type="password" name="passwordc" placholder="Enter your confirm password" className = "pass_input" onChange={(e) => validate(e)}></input> 
+             </div>
+          </div>
+  
+          <div className="input-group" style = {{marginRight: "163px", fontSize: "17px", marginTop: "4px"}}>
+            <div style={{display: "flex"}}>
+              <div style={{flex: "1", marginLeft:"609px", marginTop:"4px"}}>
+                <label>
+                  <input type="checkbox" name="Accept Term" id="Term" style={{height: "15px", width: "19px"}}></input>
+                  <span style={{display: "inline"}}>I have read &amp; agree to the </span> 
+                  <p  style={{display: "inline", color:"orange"}}>Terms of Use</p>
+                </label>
               </div>
-            </div> </div>
+            </div>
+          </div>
+  
+          <div className="form-footer">
+            <button className="create_btn"  onClick={signUpFun}> Create </button>
+          </div>
         </div>
-      </div>
 
-
-
-
-
-      {/* <div className="bootstrap">
-        <Card className="Container1">
-          <Card.Img
-            variant="top"
-            src="./images/logo-icon1.png"
-            className="Image-side"
-          />
-          <Card.Body>
-            <div className="Border-Bottom"></div>
-            <Card.Text className="Text">The decentralized web awaits</Card.Text>
-
-            <div className="Password-Container">
-              <pre>
-                <i className="fa fa-lock Lock-Icon"></i>
-                <input type="text"
-                  name="password"
-                  className="Password"
-                  placeholder="Enter your password"
-
-                  onChange={(e) => validate(e)}></input> <br />
-              </pre>
-            </div>
-            <div className="Password-Container">
-              <pre>
-                <i className="fa fa-lock Lock-Icon"></i>
-                <input type="text"
-                  name="passwordc"
-                  className="Password"
-                  placeholder="Enter your confirm password"
-
-                  onChange={(e) => validate(e)}></input> <br />
-              </pre>
-            </div>
-            <p id="message"> </p>
-            <Button variant="primary" className="Bubbton" onClick={signUpFun} >
-              SignUp
-            </Button>
-            <div>
-              <p className="One">
-                <Link to="/AssetsSendimport">import using Secret Recovery</Link>
-              </p>
-
-              <p className="Three">
-                <span className="Span">Need help?</span>Contact Trodex Wallet
-                Support
-              </p>
-            </div>
-          </Card.Body>
-        </Card>
-      </div> */}
+     </div>
+      
     </div>
   );
 };
