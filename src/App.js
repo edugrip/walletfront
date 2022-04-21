@@ -36,6 +36,10 @@ import AssetsSend from "./Components/Tokens/AssetsSend";
 import AssetsSendimport from "./Components/Tokens/AssetsSendimport";
 import AddAssestname from "./Components/Tokens/AddAssestname";
 import Send from "./Components/Tokens/Send";
+import TrodexHome from  './Components/TrodexHome/TrodexHome';
+import WalletSummary from  './Components/Wallet-Summary/WalletSummary';
+import HelpUsTrodex from  './Components/Helpus-Trodex/HelpUsTrodex';
+
 
 function App() {
   return (
@@ -48,7 +52,8 @@ function App() {
           <Route path="/send" element={<Send />} />
 
           <Route path="/account" element={<Account />} />
-          <Route path="/" element={<Index />} />
+         {/*<Route path="/" element={<Index />} /> */}
+          <Route path="/" element={<TrodexHome />} />
           <Route path="/ending" element={<Ending />} />
           <Route path="/testpage" element={<TestPage />} />
           <Route exact path="/send" element={<NewSend />} />
@@ -75,7 +80,9 @@ function App() {
           <Route exact path="/AssetsSendimport" element={<AssetsSendimport />} />
           <Route exact path="/AddAssestname" element={<AddAssestname />} />
           <Route exact path="/AssetHistory" element={<AssetHistory />} />
-         
+          <Route path="/WalletSummary" element={<WalletSummary/>}/>
+          <Route path="/HelpUsTrodex" element={<HelpUsTrodex/>}/>
+  
         </Routes>
       </BrowserRouter>
 

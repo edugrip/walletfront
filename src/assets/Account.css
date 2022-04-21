@@ -1,0 +1,282 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #0C2A38; */
+}
+
+.APP {
+    background-color: #0C2A38;
+    width: 100%;
+    height: auto;
+}
+
+.Man-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #0C2A38;
+    padding: 1rem;
+}
+
+.im {
+    width: 765px;
+}
+
+.im img {
+    height: 48px;
+    margin-top: 30px;
+    margin-left: 100px;
+    white-space: 4px;
+
+}
+
+.Button-Container {
+    border-radius: 20px;
+}
+.bgseed{
+    background-color: #0C2A38;
+    height: 680px;
+    padding-top: 100px;
+
+}
+
+.Button-Container Button {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+}
+
+.Button-Container Button:hover {
+    background-color: #0fb9b1;
+}
+
+.Dot {
+
+    height: 10px;
+    width: 10px;
+    background-color: rgb(9, 180, 32);
+    border-radius: 50%;
+    line-height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 1px;
+    margin-left: 10px;
+
+}
+
+/* main para container css start here */
+.Para-Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+}
+.card{
+    padding: 1rem;
+}
+
+.Card-Form {
+    width: 620px;
+    height:auto;
+    border-radius: 20px !important;
+    background-color: white;
+    margin-bottom: 3rem;
+
+}
+
+.Card-Form h2 {
+    background-color: white;
+    margin-top: 13px;
+    text-align: center;
+}
+
+.Paragraph1 {
+    background-color: white;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.Paragraph2 {
+    background-color: white;
+    font-size: 17px;
+    margin-top: 20px !important;
+    font-family: sans-serif;
+}
+
+.Last-Content {
+    background-color: white;
+    color: silver;
+    font-size: 17px;
+    font-family: sans-serif;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+.end-Content{
+    background-color: white;
+    font-size: 17px;
+    padding: 6px;
+}
+
+.Last-Buttons {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-top: 0.5rem;
+}
+
+.First-Button {
+    width: 200px;
+    height: 50px;
+    border-radius: 60px !important;
+    background-color: #EFEFEF !important;
+}
+
+.Second-Button {
+    border-radius: 60px !important;
+    width: 200px;
+    margin-left: 17px;
+    background: #4398e1;
+}
+
+/* media query css start here */
+@media only screen and (max-width: 992px) {
+    .Man-body {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+   
+
+    .Button-Container Button {
+        width: 180px;
+        margin-top: 30px;
+        border-radius: 30px;
+        background-color: white;
+        color: black;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 632px) {
+    .im {
+        width: 30%;
+    }
+
+    .im img {
+        height: 40px;
+        margin-top: 30px;
+        margin-left: 2px;
+    }
+
+    .Button-Container Button {
+        width: 174px;
+        margin-left: 30px;
+    }
+
+    .Card-Form {
+        width: 620px;
+        height: auto;
+    } 
+
+    .Para-Container {
+        width: 92%;
+        margin-bottom: 1rem;
+    }
+
+    .Paragraph1 {
+        width: auto;
+        font-size: 15px;
+    }
+
+    .Paragraph2 {
+        width: auto;
+        font-size: 17px;
+    }
+
+    .Last-Content {
+        width: auto;
+        font-size: 15px;
+        padding: 15px;
+        margin-left: 0px;
+
+    }
+
+
+}
+
+.recovery_phrase {
+    border-radius: 10px;
+    text-align: center;
+}
+.Wallet-Recovery-div{
+    margin-top: 17px;
+    width: 95%;
+}
+.Recovery_logo{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.Recovery_body{
+    display: flex;
+    flex-direction: column;
+    height: 465px;
+    width: 94%;
+    margin-top: 39px;
+    float: right;
+    margin-left: 13pxx;
+}
+.Secret_Phrase{
+    font-size: 43px;
+    font-weight: 400;
+    color: #314266;
+    font-size: 46px;
+}
+.Recovery_phraseCont{
+    font-size: 18px;
+    color: rgba(35, 44, 51, 0.78);
+    display: flex;
+    width: 80%;
+}
+.Phrase_Warning{
+    font-size: 18px;
+    color: rgba(35, 44, 51, 0.78);
+    margin-top: -8px;
+    display: block;
+    width: 80%;
+}
+.Secret-Content{
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    background-color: white;
+    color: rgba(35, 44, 51, 0.78);
+    font-size: 17px;
+    font-family: sans-serif;
+    border: 1px solid rgba(35, 44, 51, 0.78);
+    padding: 20px;
+    margin-top: 20px;
+}
+.Final_RecoveryCont{
+    margin-left: -7px;
+    display: flex;
+    width: 80%;
+    background-color: white;
+    font-size: 17px;
+    padding: 6px;
+}
+.recovery-footer{
+    display: flex;
+    width: 170px;
+    margin-top: 11px;
+}
