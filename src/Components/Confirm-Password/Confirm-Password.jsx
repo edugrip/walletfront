@@ -67,18 +67,24 @@ export const ConfirmPassword = () => {
 
   const signUpFun = async () => {
     console.log('password and confirm password ', password, passwordc)
+    let isinvalidPass = false;
     await fetch(`${apiUrl}password?password=${password}&cPassword=${passwordc}`)
       .then((result) => {
         result.json().then((resp) => {
           console.log("login", resp);
           if (resp.status == 'ok') {
-            localStorage.setItem("password", resp.result.password);
-            localStorage.setItem("mnemonic", resp.result.mnemonic);
-            window.location.href = ("/account")
+            if(termsCondnChecked){
+              localStorage.setItem("password", resp.result.password);
+              localStorage.setItem("mnemonic", resp.result.mnemonic);
+              window.location.href = ("/account")
+            }
           } else {
-            document.getElementById('message').innerHTML = resp.message
+            //document.getElementById('message').innerHTML = resp.message
+            isinvalidPass = true;
           }
-          if (!termsCondnChecked) {
+          if(isinvalidPass){
+            document.getElementById('message').innerHTML = resp.message
+          } else if (!termsCondnChecked) {
             document.getElementById('message').innerHTML = "Please agree the terms & conditions";
           } else {
             document.getElementById('message').innerHTML = "";
@@ -125,7 +131,9 @@ export const ConfirmPassword = () => {
               </div>
             </div>
           </div>
-          <div id="message" className="err-msg resp-errMsg"></div>
+          <div style={{width:"300px"}}>
+            <div id="message" className="err-msg resp-errMsg"></div>
+          </div>
           <div className="form-footer">
             <button className="create_btn"  onClick={signUpFun}> Create </button>
           </div>
