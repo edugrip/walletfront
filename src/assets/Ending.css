@@ -927,7 +927,7 @@ input.Button {
     display: flex;
 }
 .SecretRec-Content{
-    display: flex;
+    /* //display: flex; */
     max-width: 900px;
     background-color: white;
     color: rgba(35, 44, 51, 0.78);
@@ -943,6 +943,7 @@ input.Button {
     width: 80px;
     height: auto;
     background-color: #ffff;
+    padding-right: 5px;
 }
 
 .Secret_Boxes{

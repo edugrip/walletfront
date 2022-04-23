@@ -154,10 +154,10 @@ const Ending = () => {
             <p className="SecRecovery_phraseCont mt-1">Write down or copy these words in the right order and save them somewhere safe</p>
             <div className="SecretRec-Content">
               {
-                seedArray.map(item => {
-                  console.log('dafad',item)
-                  return (<button style= {{color:"rgba(35, 44, 51, 0.78)"}}>{item}</button>)
-                }
+                  seedArray.map(item => {
+                    console.log('dafad',item)
+                    return (<button style= {{color:"rgba(35, 44, 51, 0.78)"}}>{item}</button>)
+                  }
                 )}
             </div>
             {/* <p className="SecretRec-Content"></p> */}
