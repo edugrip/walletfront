@@ -1,103 +1,12 @@
-// import React, { useState } from "react";
-// import { Button } from "react-bootstrap";
-// import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
-// import { Link } from "react-router-dom"
-// import { useNavigate } from "react-router-dom";
-// import TestPage from "../Six-Folder/TestPage";
-// import "./Ending.css";
-// const Ending = () => {
-//   const [activeNumber, setActiveNumber] = useState([]);
-//   const handleFilterCoin = (number) => {
-//     setActiveNumber((oldData) => {
-//       return [
-//         ...oldData,
-//         number
-//       ]
-//     });
-//   }
-//   const name = "Your Secret Recovery Phrase makes it easy to";
-//   const name1 = "Your Secret Recovery Phrase makes it easy to back up and restore your ";
-//   const array = name.split(' ');
-//   const result = array.length;
-//   console.log('length is', result);
-
-//   const percentagebutton = array.map(number => {
-//     return (
-//       <input
-//         onClick={() => handleFilterCoin(number)}
-//         type="submit"
-//         value={number}
-//         className="Button"
-//       />
-//     )
-//   });
-//   const successhandle = () => {
-//     <TestPage />
-//   }
-//   const handlenextbutton = () => {
-//     if (name === name1) {
-//       alert("correct Secret Phrase");
-
-//     }
-//     else {
-//       alert("incorrect Secret Phrase");
-//     }
-//   }
-//   return (
-//     // header logo code start here
-//     <div className="main-counter">
-//       <div className="Body-counter">
-//         <img src="./images/trodex1.png" alt="" className="Photo" />
-//       </div>
-
-//       {/* right side button code start here */}
-//       <div className="Button-Counter">
-//         <button>
-//           <span className="Dotted"></span>Ethereum Mainnet
-//         </button>
-//       </div>
-
-//       {/* main content code start here */}
-//       <div className="Border">
-//         <h2 className="Head2">Confirm your Secret Recovery Phrase</h2>
-//         <p className="Paragraph">
-//           Please select each phrase in order to make sure it is correct.
-//         </p>
-
-//         <div className="Body2-Counter">
-//           <label>{activeNumber}</label>
-//           {console.log(activeNumber)}
-//         </div>
-
-//         {/* last button code start here */}
-//         <div className="Boxes">
-//           {percentagebutton}
-//         </div>
-//         {/* footer button code start here */}
-//         <div className="end-Buttons">
-//           <Button variant="outline-primary" className="one-Button">
-//             Remind me later
-//           </Button>
-//           <Button variant="primary" className="two-Button" onClick={() => handlenextbutton()}>
-//             Next
-//           </Button>
-//           <Link to='/testpage'><Button variant="primary" className="two-Button">
-//             Next
-//           </Button>
-//           </Link>
-
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-// export default Ending;
 import React, { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import Header from "../Six-Folder/Header";
-import "./Ending.css";
+//import "./Ending.css";
+import "../../assets/Account.css";
+import "../../assets/Confirm-Password.css";
+import "../../assets/Ending.css";
 let apiUrl = `https://backend.trodex.io/`
 
 
@@ -235,126 +144,119 @@ const Ending = () => {
  
 
   return (
-    // header logo code start here
-    <div className="bgseed">
-    {/* <Header/> */}
-      {/* main content code start here */}
-      <div className="Border">
-        <h2 className="Head2">Confirm your Secret Recovery Phrase</h2>
-        <p className="Paragraph">
-          Please select each phrase in order to make sure it is correct.
-        </p>
-        <div className="Body2-Counter">
-          {
-            seedArray.map(item => {
-              console.log('dafad',item)
-              return (<button>{item}</button>)
-            }
-            )}
+    <div className="Main-Password-Container password_Cont">
+      <div className="Wallet-Recovery-div">
+        <div className="secretPhrase_logo">
+            <img src="./Images/trodex7.png" className="brandName" alt="RandomImage"/>
         </div>
-        <div className="Boxes">
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide1();}}
-            type="submit"
-            value={mnemonicArray[3]}
-            className={show1}
-          />
-         
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide2();}}
-            type="submit"
-            value={mnemonicArray[8]}
-            className={show2}
-          />
-          
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide3()}}
-            type="submit"
-            value={mnemonicArray[4]}
-            className={show3}
-          />
+        <div className="secretPhrase_body">
+            <div className="SecretRecovery_Phrase">Your Secret Recovery Phrase</div>
+            <p className="SecRecovery_phraseCont mt-1">Write down or copy these words in the right order and save them somewhere safe</p>
+            <div className="SecretRec-Content">
+              {
+                seedArray.map(item => {
+                  console.log('dafad',item)
+                  return (<button style= {{color:"rgba(35, 44, 51, 0.78)"}}>{item}</button>)
+                }
+                )}
+            </div>
+            {/* <p className="SecretRec-Content"></p> */}
+            <div className="Secret_Boxes">
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide1();}}
+                  type="submit"
+                  value={mnemonicArray[3]}
+                  className={show1}
+                />
+              
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide2();}}
+                  type="submit"
+                  value={mnemonicArray[8]}
+                  className={show2}
+                />
+                
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide3()}}
+                  type="submit"
+                  value={mnemonicArray[4]}
+                  className={show3}
+                />
 
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide4();}}
-            type="submit"
-            value={mnemonicArray[0]}
-            className={show4}
-          />
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide4();}}
+                  type="submit"
+                  value={mnemonicArray[0]}
+                  className={show4}
+                />
 
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide5();}}
-            type="submit"
-            value={mnemonicArray[9]}
-            className={show5}
-          />
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide5();}}
+                  type="submit"
+                  value={mnemonicArray[9]}
+                  className={show5}
+                />
 
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide6();}}
-            type="submit"
-            value={mnemonicArray[10]}
-            className={show6}
-          />
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide6();}}
+                  type="submit"
+                  value={mnemonicArray[10]}
+                  className={show6}
+                />
 
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide7()}}
-            type="submit"
-            value={mnemonicArray[1]}
-            className={show7}
-          />
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide7()}}
+                  type="submit"
+                  value={mnemonicArray[1]}
+                  className={show7}
+                />
 
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide8()}}
-            type="submit"
-            value={mnemonicArray[11]}
-            className={show8}
-          />
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide8()}}
+                  type="submit"
+                  value={mnemonicArray[11]}
+                  className={show8}
+                />
 
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide9()}}
-            type="submit"
-            value={mnemonicArray[7]}
-            className={show9}
-          />
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide9()}}
+                  type="submit"
+                  value={mnemonicArray[7]}
+                  className={show9}
+                />
 
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide10();}}
-            type="submit"
-            value={mnemonicArray[2]}
-            className={show10}
-          />
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide10();}}
+                  type="submit"
+                  value={mnemonicArray[2]}
+                  className={show10}
+                />
 
-          <input
-            onClick={(e) => {updateSeed(e.target.value);  hide11();}}
-            type="submit"
-            value={mnemonicArray[5]}
-            className={show11}
-          />
+                <input
+                  onClick={(e) => {updateSeed(e.target.value);  hide11();}}
+                  type="submit"
+                  value={mnemonicArray[5]}
+                  className={show11}
+                />
 
-          <input
-            onClick={(e) => {updateSeed(e.target.value); hide12();}}
-            type="submit"
-            value={mnemonicArray[6]}
-            className={show12}
-          />
-        </div>
-        {/* footer button code start here */}
-        <p id='message'> </p>
-        <div className="end-Buttons">
-          {/* <Button variant="outline-primary" className="one-Button">
-            Remind me later
-          </Button> */}
-       
-          <br/>
-          <Button variant="primary" className="two-Button" onClick={seedVerification} >
-            Next
-          </Button>
-
-          {/* <Link to="./TestPage"><Button variant="primary">
-            Next
-          </Button></Link> */}
+                <input
+                  onClick={(e) => {updateSeed(e.target.value); hide12();}}
+                  type="submit"
+                  value={mnemonicArray[6]}
+                  className={show12}
+                />
+            </div>
+            <div className="dash"></div>
+            <p className="HideSecret">Do not share your secret phrase!</p>
+            <p className="secretPhrase_reveal">If someone has secret phrase they will have full control of your wallet</p>
+            <div>
+              <div id="message" className="err-msg"></div>
+            </div>
+            <div className="recovery-footer">
+              <button class="create_btn" onClick={seedVerification} >Next</button>
+            </div>
         </div>
       </div>
-
     </div>
   );
 };

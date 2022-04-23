@@ -24,9 +24,9 @@ const Account = () => {
                   <div className="Secret_Phrase">Secret Recovery Phrase</div>
                   <p className="Recovery_phraseCont mt-1" >Your Secret Recovery Phrase makes it easy to back up and restore your account.</p>
                   <p className="Phrase_Warning">WARNINGS: Never disclose your Secret Recovery Phrase. Anyone with this Phrase can take your Ether forever.</p>
-                  <p className="Secret-Content">primary glad obey wisdom sadness veteran correct salute lucky better pretty jacket</p>
+                  <p className="Secret-Content"> {mnemonic}</p>
                   <p class="Final_RecoveryCont">Save this recovery phrase as it will help you when password is forgotten.</p>
-                  <div class="recovery-footer"><button class="create_btn">Next</button></div>
+                  <div class="recovery-footer"><button class="create_btn" onClick={() => ButtonTow()}>Next</button></div>
               </div>
         </div>
     </div>
